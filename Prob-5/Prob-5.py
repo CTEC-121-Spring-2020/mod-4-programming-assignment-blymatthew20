@@ -46,7 +46,7 @@ def main():
     p2 = Point(150,400)
     BackBumper = Rectangle(p1 , p2)
     BackBumper.setOutline("gray")
-    BackBumper.setFill("gray")
+    BackBumper.setFill("blue")
     BackBumper.draw(win)
 
     #Front Bumper
@@ -54,7 +54,7 @@ def main():
     p2 = Point(600,400)
     FrontBumper = Rectangle(p1 , p2)
     FrontBumper.setOutline("gray")
-    FrontBumper.setFill("gray")
+    FrontBumper.setFill("green")
     FrontBumper.draw(win)
 
     # Car Polygon
