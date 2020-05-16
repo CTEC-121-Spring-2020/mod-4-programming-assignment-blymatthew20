@@ -18,7 +18,7 @@ def main():
      shape.setFill("red")
      shape.draw(win)
 
-     #draws squarers without moving orignal
+     #draws squares without moving orignal
      for i in range(5):
           p = win.getMouse()
           shape = Rectangle(p, Point(p.getX()+50, p.getY()+50))
