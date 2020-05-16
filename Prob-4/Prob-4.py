@@ -9,6 +9,8 @@ from graphics import *
 def main():
     
     win = GraphWin('Matthew Bly House',800, 800)
+    win.setCoords(0,0,100,100)
+
     
     # draw the house frame
     p1 = win.getMouse()
@@ -19,6 +21,7 @@ def main():
     houseTopY = max(p1.getY(), p2.getY())
     houseLeftX = min(p1.getX(), p2.getX())
     houseRighX = max(p1.getX(), p2.getX())
+ 
 
     # draw the door
     p3 = win.getMouse()
@@ -28,6 +31,7 @@ def main():
     doorP2 = Point(p3.getX() + doorW * 0.5, p3.getY())
     door = Rectangle(doorP1, doorP2)
     door.draw(win)
+    
    
     # draw the window
     p4 = win.getMouse()
@@ -36,7 +40,7 @@ def main():
     windowP2 = Point(p4.getX() + windowH * 0.5, p4.getY() + windowH * 0.5)
     window = Rectangle(windowP1, windowP2)
     window.draw(win)
-
+   
     # Draw the roof
     p5 = win.getMouse()
     roofP1 = Point(houseLeftX, houseTopY)
@@ -44,8 +48,10 @@ def main():
     roofP3 = p5
     roof = Polygon(roofP1, roofP2, roofP3)
     roof.draw(win)
-    win.getMouse()
-    win.close
 
+    win.getMouse() 
+    win.close()
+
+    
 
 main()
