@@ -2,12 +2,13 @@
 #   Programming Assignment 6
 #       Prob-2.py
 
-# <YOUR NAME>
+# Matthew Bly
 
 from graphics import *
 
 def main():
      # creates window
+     
      win = GraphWin("Problem 2",400, 400)
 
      #draws square
@@ -30,5 +31,7 @@ def main():
      Text(Point(200,200),"Click again to quit").draw(win)
      win.getMouse()     
      win.close()
+     
+
 
 main()
